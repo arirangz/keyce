@@ -1,0 +1,20 @@
+section {
+    display: inline-block;
+    width: 48%;
+    border-left: 2px solid black;
+}
+h2 {
+    font-size: 20px;
+}
+
+@media (max-width: 700px) {
+    section {
+        width: 100%;
+        border: none;
+    }
+    h2 {
+        font-size: 30px;
+        text-transform: uppercase;
+        color: red;
+    }
+}
