@@ -1,0 +1,22 @@
+#images {
+    display: flex;
+    flex-wrap: wrap;
+    /*justify-content: space-between;
+    align-items: flex-start;
+    */
+  }
+  img {
+    box-sizing: border-box;
+    padding: 10px;
+  }
+  #image1 {
+    width: 40%;
+  }
+  #image2 {
+    width: 60%;
+  }
+  #image3 {
+    width: 100%;
+  }
+  
+  

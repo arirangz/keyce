@@ -1,0 +1,131 @@
+#bod{
+    margin-top: 100px;
+    margin-left: 340px;
+    margin-right: 340px;
+    padding-left: 0px;
+    padding-top: 10px;
+    padding-bottom: 6px;
+    /* border: 5px red solid; */
+    box-shadow: -1px -4px 10px 6px rgba(62, 62, 62, 0.849);
+}
+
+h2{
+    border-bottom: 2px red solid;
+}
+
+section{
+    /* border: 2px blue solid; */
+    padding-right: 6px;
+}
+
+
+/* left side style */
+#left_side{
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 3px;
+    /* border: 2px green solid; */
+    width: 200px;
+}
+
+#prof{
+    width: 190px;
+}
+
+#cont{
+    width: 190px;
+    margin-top: 5px;
+}
+#lang{
+    width: 190px;
+    margin-top: 5px;
+}
+
+
+/* right side style */
+
+#right_side{
+    display: inline-block;
+    /* border: 2px black solid; */
+    width: 600px;
+}
+
+#educ{
+    width: 550px;
+}
+
+#expe{
+    width: 550px;
+}
+
+#skill{
+    width: 550px;
+}
+
+#ref{
+    width: 550px;
+}
+
+#sig{
+    border: none;
+    border-bottom: 3px black dotted;
+}
+
+#dat{
+    border: none;
+    border-bottom: 3px black dotted;
+}
+
+footer p{
+    display: inline;
+}
+
+
+/* body */
+
+/* h1{
+    display: inline-block;
+}
+section{
+    border: 2px blue solid;
+    padding-right: 6px;
+}
+
+h2{
+    border-bottom: 2px red solid;
+}
+
+#prof{
+    display: inline-block;
+    width: 300px;
+}
+
+#expe{
+    display: inline-block;
+    width: 500px;
+}
+
+#cont{
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+}
+
+#educ{
+    display: inline-block;
+    width: 500px;
+}
+
+#lang{
+    display: inline-block;
+    width: 300px;
+    margin-top: 5px;
+}
+
+#skill{
+    display: inline-block;
+    width: 500px;
+} */
+
+
+

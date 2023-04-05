@@ -1,0 +1,28 @@
+/* Hide menu by default */
+header ul#menu {
+    display: none;
+  }
+  
+  /* Show menu when menu-icon is focused */
+  header #menu-icon:focus + ul#menu {
+    display: block;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 600px) {
+    header ul#menu {
+      display: none;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      background: #fff;
+      padding: 20px;
+    }
+    header ul#menu li {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  
+  

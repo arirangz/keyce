@@ -1,0 +1,33 @@
+header  {
+    display: flex;
+    align-items: center;
+    border-bottom: 4px solid #4682c9;
+  }
+  header input {
+    margin-left: 20px;
+  }
+
+  section {
+    border-left: 5px solid #4682c9;
+    padding-left: 10px;
+  }
+
+  section h3 {
+    color: #4682c9;
+  }
+
+  section h2, section h3 {
+    text-transform: uppercase;
+  }
+
+
+
+footer {
+    background-color: #4682c9;
+    color: #ffffff;
+    padding: 10px;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }

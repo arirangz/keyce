@@ -1,0 +1,134 @@
+body{
+    font-family:Tahoma;
+}
+h1,h4,h3,h2{
+    text-transform: uppercase;
+}
+
+header{
+    display: flex;
+    align-items: center;
+}
+input{
+    border: 2px solid #fd8164;
+}
+input[type=submit] {
+    background-color: #fdaa64;
+    color: white;
+}
+
+nav{
+color: white;
+border:3px solid #fdaa64;
+background-color:#fdaa64;
+text-align: center;
+}
+
+nav ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    }
+
+    nav a{
+        color: white;
+        text-decoration: none;
+        padding:15px;
+    }
+
+    nav a:hover{
+        background-color: white;
+        color: #fdaa64;
+        }
+
+        ul li{
+            margin: 5px;
+            display: inline-block;
+            width: 150px;
+            height: 25px;
+        }
+
+#introduction h1 {
+    color: #fd8164;
+    text-align: center;
+}
+#introduction {
+    text-align: center;
+    border-bottom: 2px solid #fd8164;
+}
+.discover{
+    color: white;
+    background-color: #fdaa64;
+    border: 2px solid #fd8164;
+    
+}
+
+.center{
+    color: #fd8164;
+    text-align: center;
+}
+#featured{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+article{
+    margin:30px;
+    width:20%;
+    border: 3px solid #fd8164;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+article img{
+    width:100%;
+}
+
+#featured article h5{
+    text-align: center;
+}
+
+.recipe{
+    color: white;
+    background-color: #fdaa64;
+    text-align: center;
+    border: 3px solid #fd8164;
+text-transform: uppercase;
+}
+
+
+#footer1{
+    background-color: #fdaa64;
+    color: white; 
+    text-align: center;
+}
+
+#footer1 nav a{
+    text-decoration: underline;
+}
+
+#footer2 h3{
+    color: #fd8164;
+}
+
+#footer2{
+    text-align: center;
+    margin: 10px;
+}
+
+#footer3{
+    background-color: #fdaa64;
+    color: white;
+}
+
+#footer3 p{
+    text-align: center;
+}
+
+#footer3 nav{
+    text-align: left;
+}
+
+#footer3 nav a {
+    padding: 5px;
+  }

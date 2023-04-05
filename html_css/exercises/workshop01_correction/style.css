@@ -1,0 +1,66 @@
+* {
+    font-family: Tahoma;
+}
+
+nav {
+    background-color: #be393c;
+}
+nav li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #be393c;
+}
+
+h1 {
+    color: #be393c;
+    border-bottom: 3px solid #be393c;
+    padding-bottom: 15px;
+}
+
+h1, h2, h3 {
+    text-transform: uppercase;
+}
+
+h2 {
+    border-left: 5px solid #be393c;
+    padding: 10px;
+}
+
+#conclusion {
+    border: 2px solid #be393c;
+    margin: 20px;
+}
+
+#conclusion h2 {
+    color: #be393c;
+    border: none;
+}
+
+#introduction img {
+    float: left;
+}
+
+section {
+    border-bottom: 3px solid #be393c;
+    overflow: auto;
+}
+
+.upper-text {
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: #be393c;
+    color: white;
+    padding: 10px;  
+}

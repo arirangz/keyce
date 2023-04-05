@@ -1,0 +1,35 @@
+* {
+    font-family: Tahoma;
+}
+
+h1 {
+    color: #be393c;
+    text-transform: uppercase;
+    border-bottom: 3px solid #be393c;
+    padding-bottom: 20px;
+}
+
+h2 {
+    text-transform: uppercase;
+    border-left: 6px solid #be393c;
+    padding: 10px;
+}
+
+section {
+    border-bottom: 3px solid #be393c;
+}
+
+li {
+    display: inline-block;
+    padding: 10px;
+}
+
+nav {
+    background-color: #be393c;
+}
+
+a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}

@@ -1,0 +1,106 @@
+th,td{
+    padding:8px;
+    text-align:center;
+  }
+  table{
+
+    width:900px;
+    border:3px black solid;
+   }
+  
+  th{
+    background-color:black;
+    color:white;
+  }
+  
+  tr:nth-child(even){
+    background-color:#B0B0B0;
+  }
+  header h1, header h2{
+    margin: 0px;
+    text-align:center;
+    color:white;
+   
+  }
+  p strong{
+    color:#C41E3A;
+  }
+  
+  form p{
+    margin: 10px 0;
+  }
+  
+  form label{
+    display: block;
+      font-weight:bold;
+    margin-bottom:5px;
+  }
+  
+  form select {
+    width: 100%;
+    padding: 16px 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+  }
+  #submit {
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .labelinlined label {
+    display: inline;
+  }
+
+  .labelinlined input {
+    width: auto;
+  }
+
+  form p {
+    margin: 10px 0;
+  }
+
+  form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .bg-image{
+background-image: url(https://media.istockphoto.com/id/1191184417/vector/vector-white-background.jpg?s=612x612&w=0&k=20&c=XZMWqfLdZ3ImrVgeFYzKs8-f_cr_GcD7X5F7cUqAkC8=);
+background-size: cover;
+  }
+
+  .column{
+    display: inline-block;
+    width: 250px;
+  }
+
+ header{
+    border:solid 3px black;
+    background-color:#383838;
+  }
+  header h2{
+    font-size: 12px;
+  }
