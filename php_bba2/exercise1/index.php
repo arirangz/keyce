@@ -18,6 +18,6 @@ $age = 35;
     <?php echo "<h2>My name is $first_name $last_name. I am $age years old.</h2>" ?>
     <h2><?php echo "My name is $first_name $last_name. I am $age years old." ?></h2>
     <h2>My name is <?php echo $first_name ?> <?php echo $last_name ?>. I am <?php echo $age; ?> years old.</h2>
-    <h2>My name is <?php echo $first_name   . " " .     $last_name; ?>. I am <?php echo $age; ?> years old.</h2>
+    <h2>My name is <?php echo $first_name  .  " " .     $last_name; ?>. I am <?php echo $age; ?> years old.</h2>
 </body>
 </html>
