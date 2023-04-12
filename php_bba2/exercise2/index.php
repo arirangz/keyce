@@ -16,6 +16,6 @@ $price = 30.5;
 <body>
     <h1>Product: <?php echo $product_name; ?></h1>
     <p>Description: <?php echo $description; ?></p>
-    <h2>Price: <?php echo $price; ?> $</h2>
+    <h2>Price: <?=$price; ?>$</h2>
 </body>
 </html>
