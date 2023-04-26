@@ -3,6 +3,7 @@ let targetNumber = Math.floor((Math.random() * 100) + 1 );
 // for input and button
 const tryButton = document.getElementById("tryButton");
 const userNumberInput = document.getElementById("userNumberInput");
+const messageDiv = document.getElementById("messageDiv");
 
 // add event listener to manage click event
 tryButton.addEventListener("click", function () {
@@ -11,10 +12,15 @@ tryButton.addEventListener("click", function () {
     
     //add a if to compare userNumberValue with targetNumber
     if (userNumberValue > targetNumber) {
-        alert("Your number is too big");
+        messageDiv.textContent = userNumberValue + " is too big";
     } else if (userNumberValue < targetNumber) {
-        alert("Your number is too small");
+        messageDiv.textContent = userNumberValue + " is too small";
     } else {
-        alert("You won!!!");
+        messageDiv.textContent = userNumberValue + " is correct";
     }
+
+    // Empty the input
+    userNumberInput.value = "";
+    // Give back the focus to the input
+    userNumberInput.focus();
 });
