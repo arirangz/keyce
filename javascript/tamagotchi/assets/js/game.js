@@ -8,6 +8,7 @@ const feedButton = document.getElementById("feed");
 const sleepButton = document.getElementById("sleep");
 const playButton = document.getElementById("play");
 const studyButton = document.getElementById("study");
+const startButton = document.getElementById("start");
 
 const hungerBar = document.getElementById("hungerBar");
 const energyBar = document.getElementById("energyBar");
@@ -51,12 +52,21 @@ function checkGameover() {
     disableButtons();
     clearTimeout(decreaseTimeout);
     clearTimeout(imageTimeout);
+    startButton.classList.remove("hidden");
+    startButton.disabled = false;
   }
 }
 
 function initialisation() {
+  Tamagotchi.energy = 50;
+  Tamagotchi.hunger = 70;
+  Tamagotchi.study = 60;
+  Tamagotchi.happiness = 40;
   decreaseAll();
   refreshStats();
+  enableButtons();
+  animationsImage.src = characterImagesPath + "idle.gif";
+  startButton.classList.add("hidden");
   gameOverTitle.classList.add("hidden");
 }
 
@@ -134,6 +144,9 @@ playButton.addEventListener("click", function () {
 });
 studyButton.addEventListener("click", function () {
   actionManagement("study", 10);
+});
+startButton.addEventListener("click", function() {
+  initialisation();
 });
 
 initialisation();
