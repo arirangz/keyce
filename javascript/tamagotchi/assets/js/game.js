@@ -80,13 +80,13 @@ function refreshStats() {
   if (Tamagotchi.study < 0) {
     Tamagotchi.study = 0;
   }
-  studyBar.value = Tamagotchi.happiness;
+  studyBar.value = Tamagotchi.study;
 }
 
 function actionManagement(action, value) {
   currentImage = action + ".gif";
   if (Tamagotchi[action] < 100) {
-    Tamagotchi[action] += 20;
+    Tamagotchi[action] += value;
   } else {
     currentImage = "no.gif";
   }
@@ -95,16 +95,16 @@ function actionManagement(action, value) {
 }
 
 feedButton.addEventListener("click", function () {
-  actionManagement("hunger", 20);
+  actionManagement("hunger", 10);
 });
 sleepButton.addEventListener("click", function () {
-  actionManagement("energy", 20);
+  actionManagement("energy", 40);
 });
 playButton.addEventListener("click", function () {
-  actionManagement("happiness", 20);
+  actionManagement("happiness", 15);
 });
 studyButton.addEventListener("click", function () {
-  actionManagement("study", 20);
+  actionManagement("study", 10);
 });
 
 initialisation();
