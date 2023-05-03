@@ -1,7 +1,8 @@
 const characterImagesPath = "assets/images/character/";
 const animationDuration = 4000;
-const decreaseDuration = 5000;
+const decreaseDuration = 1000;
 const animationsImage = document.getElementById("animationsImage");
+const gameOverTitle = document.getElementById("gameOverTitle");
 
 const feedButton = document.getElementById("feed");
 const sleepButton = document.getElementById("sleep");
@@ -25,9 +26,29 @@ const Tamagotchi = {
   study: 30,
 };
 
+function decreaseAll() {
+  Tamagotchi.hunger -= 10;
+  Tamagotchi.energy -= 2;
+  Tamagotchi.happiness -= 5;
+  Tamagotchi.study -= 1;
+
+  checkGameover();
+
+  decreaseTimeout = setTimeout(function() {
+    decreaseAll();
+    refreshStats();
+  }, decreaseDuration);
+}
+
+function checkGameover() {
+  if (Tamagotchi.hunger <= 0) {
+    gameOverTitle.classList.remove("hidden");
+  }
+}
+
 function initialisation() {
+  decreaseAll();
   refreshStats();
-  //decreaseAll();
   gameOverTitle.classList.add("hidden");
 }
 
@@ -57,7 +78,7 @@ function refreshImage() {
   imageTimeout = setTimeout(function () {
     animationsImage.src = characterImagesPath + "idle.gif";
     enableButtons();
-    //decreaseAll();
+    decreaseAll();
   }, animationDuration);
 }
 
