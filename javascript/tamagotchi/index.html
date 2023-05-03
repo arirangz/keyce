@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tamagotchi</title>
+</head>
+<body>
+    <section id="game">
+        <section id="animations" class="scanline">
+            <h2 id="gameOverTitle" class="hidden">GAME OVER</h2>
+            <img id="animationsImage"  src="assets/images/character/idle.gif" alt="">
+        </section>
+        <section id="stats">
+            <ul>
+                <li><span>Hunger</span><progress id="hungerBar" max="100" value="0"></progress></li>
+                <li><span>Energy</span><progress id="energyBar" max="100" value="0"></progress></li>
+                <li><span>Happiness</span><progress id="happinessBar" max="100" value="0"></progress></li>
+                <li><span>Education</span><progress id="studyBar" max="100" value="0"></progress></li>
+            </ul>
+
+        </section>
+        <nav id="actions">
+            <ul>
+                <li><button id="feed" class="button">Feed</button></li>
+                <li><button id="sleep" class="button">Sleep</button></li>
+                <li><button id="play" class="button">Play</button></li>
+                <li><button id="study" class="button">Study</button></li>
+            </ul>
+        </nav>
+    </section>
+    
+
+    <script src="assets/js/game.js"></script>
+</body>
+</html>
