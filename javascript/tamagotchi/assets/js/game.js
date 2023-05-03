@@ -41,8 +41,16 @@ function decreaseAll() {
 }
 
 function checkGameover() {
-  if (Tamagotchi.hunger <= 0) {
+  if (Tamagotchi.hunger <= 0 || Tamagotchi.study <= 0 || Tamagotchi.energy <= 0  || Tamagotchi.happiness <= 0 ) {
+    Tamagotchi.hunger = 0;
+    Tamagotchi.study = 0;
+    Tamagotchi.happiness = 0;
+    Tamagotchi.energy = 0;
     gameOverTitle.classList.remove("hidden");
+    animationsImage.src = characterImagesPath + "tired.gif";
+    disableButtons();
+    clearTimeout(decreaseTimeout);
+    clearTimeout(imageTimeout);
   }
 }
 
@@ -116,7 +124,7 @@ function actionManagement(action, value) {
 }
 
 feedButton.addEventListener("click", function () {
-  actionManagement("hunger", 10);
+  actionManagement("hunger", 30);
 });
 sleepButton.addEventListener("click", function () {
   actionManagement("energy", 40);
